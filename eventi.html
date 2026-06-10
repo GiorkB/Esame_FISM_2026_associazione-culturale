@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='it'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Associazione culturale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">GiochiCoglioni</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="eventi.html">Eventi</a>
+        <a class="nav-link" href="chi-siamo.html">Chi Siamo</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <header>
+        <h1>I nostri Eventi</h1>
+        <p>Qualcuno è anche divertente, sta a voi trovare quale!</p>
+    </header>
+
+    <main>
+
+        <section class="container my-5">
+        <h2 class="mb-4">Eventi incredibili</h2>
+
+        <div id="status-message"></div>
+
+        <div class="row g-3 mb-4">
+            <div class="col-md-8">
+            <input id="search-input" class="form-control" type="search" placeholder="Cerca...">
+            </div>
+            <div class="col-md-4">
+            <select id="category-filter" class="form-select"></select>
+            </div>
+        </div>
+
+        <p class="text-body-secondary">Elementi mostrati: <span id="items-count">0</span></p>
+
+        <div id="cards-container" class="row g-4"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>Autore: <strong>Gianmarco Bonanomi</strong></h4>
+        <p>Non venite a cercarmi per favore</p>
+    </footer>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="script.js"></script>
+
+</body>
+
+</html>
